@@ -14,53 +14,53 @@ import { listPageLoader, profilePageLoader, singlePageLoader } from "./lib/loade
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "https://thehomescout.netlify.app/",
       element: <Layout />,
       children: [
         {
-          path: "/",
+          path: "https://thehomescout.netlify.app/",
           element: <HomePage />,
         },
         {
-          path: '/explore',
+          path: 'https://thehomescout.netlify.app/explore',
           element: <Explore />
         },
         {
-          path: "/list",
+          path: "https://thehomescout.netlify.app/list",
           element: <ListPage />,
           loader: listPageLoader,
         },
         {
-          path: "/:id",
+          path: "https://thehomescout.netlify.app/:id",
           element: <SinglePage />,
           loader: singlePageLoader,
         },
 
         {
-          path: "/login",
+          path: "https://thehomescout.netlify.app/login",
           element: <Login />,
         },
         {
-          path: "/register",
+          path: "https://thehomescout.netlify.app/register",
           element: <Register />,
         },
       ],
     },
     {
-      path: "/",
+      path: "https://thehomescout.netlify.app/",
       element: <RequireAuth />,
       children: [
         {
-          path: "/profile",
+          path: "https://thehomescout.netlify.app/profile",
           element: <ProfilePage />,
           loader: profilePageLoader
         },
         {
-          path: "/profile/update",
+          path: "https://thehomescout.netlify.app/profile/update",
           element: <ProfileUpdatePage />,
         },
         {
-          path: "/add",
+          path: "https://thehomescout.netlify.app/add",
           element: <NewPostPage />,
         },
       ],
